@@ -1,3 +1,29 @@
+<?php
+
+
+if ( isset( $_POST['sendmail'] ) ) {
+$email=$_POST['email'];
+         $to = $email;
+         $subject = "This is subject";
+         
+         $message = "<b>This is HTML message.</b>";
+         $message .= "<h1>This is headline.</h1>";
+         
+         $header = "From:abc@somedomain.com \r\n";
+         $header .= "Cc:afgh@somedomain.com \r\n";
+         $header .= "MIME-Version: 1.0\r\n";
+         $header .= "Content-type: text/html\r\n";
+         
+         $retval = mail ($to,$subject,$message,$header);
+         
+         if( $retval == true ) {
+            echo "Message sent successfully...";
+         }else {
+            echo "Message could not be sent...";
+         }
+ }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,13 +113,13 @@ document.createElement("video");
 <h1> Healthcare <strong>Marketplace</strong> for <br> Elective <strong>Surgeries</strong></h1>
 <p>to reduce healthcare costs and improve quality. Watch Overview Video </p>
 <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-					<form class="form-horizontal" action="subscribe.php" id="subscribeForm" method="POST">
+					<form class="form-horizontal" action="index.php" id="subscribeForm" method="POST">
 						<div class="form-group">
 							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Work email" data-validate="validate(required, email)" required="required">
 							</div>
 							<div class="col-md-5 col-sm-4">
-								<button type="button" id="sendmail" class="btn btn-success btn-lg">See  Healme <i class="fa fa-angle-double-right"></i></button>
+								<button type="submit" id="sendmail" name="sendmail" class="btn btn-success btn-lg">See  Healme <i class="fa fa-angle-double-right"></i></button>
 							</div>
 						</div>
                         <p>We guarantee 100% privacy. Your information will not be shared. </p>
