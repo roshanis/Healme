@@ -147,7 +147,7 @@ img {
 	background: url('../images/play-btn.png') no-repeat;
 	display: block;
 	text-indent: -99999px;
-	margin: 80px auto ;
+	margin: 80px auto;
 	transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
@@ -263,11 +263,38 @@ header {
 .navbar-nav > li.last a:hover {
 	border-color: #164e86;
 }
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+
+p {
+	padding: 0;
+	margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	color: #666;
+	margin-top: 10px;
+}
 /* --------------------< banner Style >-------------------- */
 .banner {
 	float: left;
 	width: 100%;
-	margin-top: 68px;
+	margin-top: 58px;
 	text-align: center;
 	padding: 11% 0;
 }
@@ -362,17 +389,17 @@ header {
 	position: relative;
 	z-index: 999;
 }
-.whathelpme {
+.more-healme {
 	float: left;
 	width: 100%;
 	background-color: #f4f4f4;
 	text-align: center;
 	padding-top: 50px;
 }
-.whathelpme > .container {
+.more-healme > .container {
 	padding-bottom: 50px;
 }
-.whathelpme p {
+.more-healme p {
 	color: #3d3d3d;
 	font-size: 17px;
 	line-height: 32px;
