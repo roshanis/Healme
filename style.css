@@ -274,7 +274,7 @@ header {
 }
 
 .centered {text-align: center}
-.mt {margin-top: 50px;}
+.mt {margin-top: 20px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
@@ -393,7 +393,7 @@ p {
 	float: left;
 	width: 100%;
 	background-color: #f4f4f4;
-	text-align: center;
+	text-align: left;
 	padding-top: 50px;
 }
 .more-healme > .container {
@@ -406,7 +406,7 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	padding: 0px 8% 40px;
 }
 .continue {
