@@ -114,6 +114,37 @@ small {
 /*** Spacing ***/
 hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, p, table, address, fieldset, figure {
 }
+
+/* GENERAL CONF */
+
+i {
+	margin-right: 10px;
+}
+
+input {
+	font-size: 18px;
+	min-height: 40px;
+	border-radius: 2px;
+	line-height: 20px;
+	padding: 11px 30px 12px;
+	border: none;
+	margin-bottom: 10px;
+	background-color: #e9f0f2;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 70%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+.subscribe-submit {
+	right: 0;
+}
+
 input[type="button"] {
 	transition: all 0.3s ease-in-out 0s;
 	-webkit-transition: all 0.3s ease-in-out 0s;
@@ -141,6 +172,18 @@ li {
 img {
 	max-width: 100%;
 }
+
+.btn-green {
+	background: #1abc9c;
+	color: white;
+	border-radius: 2px;
+}
+
+.btn-green:hover {
+	background: #16a085;
+	color: white;
+}
+
 .hero-play-btn {
 	height: 99px;
 	width: 99px;
@@ -2389,6 +2432,10 @@ ul.proced li a:hover {
 	line-height: 35px;
 }
 
+form {
+    display: block;
+    margin-top: 0em;
+}
 
 .videosection{ float:left; width:100%; padding-top:50px; padding-bottom:50px; border-bottom:1px solid #ccc; border-top:1px solid #ccc; background-color:#fff;}
 .videosection iframe{ width:100%; float:left; height:553px;}
